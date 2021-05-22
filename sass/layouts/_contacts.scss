@@ -1,0 +1,28 @@
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-link {
+  display: flex;
+  align-items: center;
+}
+
+.contacts-link .icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--dark-bg-text-color);
+  stroke: var(--dark-bg-text-color);
+  margin-right: 20px;
+
+  transition: fill var(--animation), stroke var(--animation);
+}
+
+.contacts-link:hover .icon,
+.contacts-link:focus .icon {
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+}
+
+.contacts-address {
+  margin-bottom: 70px;
+}

@@ -1,0 +1,66 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.form-field {
+  width: calc((100% - 30px) / 2);
+  padding-bottom: 8px;
+  margin-bottom: 44px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  color: #fff;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.form-field:focus {
+  outline: none;
+  border-bottom-color: #fff;
+}
+
+.form-field:-webkit-autofill,
+.form-field:-webkit-autofill:hover,
+.form-field:-webkit-autofill:focus {
+  -webkit-text-fill-color: currentColor;
+  -webkit-box-shadow: 0 0 0px 1000px var(--dark-bg-color) inset;
+}
+
+.form-field::placeholder,
+.form-field-text {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.form-field:focus::placeholder {
+  color: var(--second-bg-color);
+}
+
+.form-message {
+  width: 100%;
+  resize: none;
+}
+
+.form-field:valid:not(:focus) {
+  color: var(--second-bg-color);
+}
+
+.form-field:invalid:not(:focus) {
+  color: red;
+}
+
+.form-field:required {
+  /* background-color: #ff44004e; */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 108, 0, 0.2),
+    rgba(255, 108, 0, 0)
+  );
+}

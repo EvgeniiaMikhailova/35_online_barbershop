@@ -1,0 +1,12 @@
+.socials-list {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--title-color);
+}
+
+.socials-item:not(:last-child) {
+  margin-right: 40px;
+}

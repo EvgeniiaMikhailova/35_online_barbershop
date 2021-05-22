@@ -1,0 +1,30 @@
+.social-icons {
+  display: inline-flex;
+}
+
+.social-icons .icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--title-color);
+
+  transition: fill var(--animation);
+}
+
+.socisl-icon-link:hover .icon,
+.socisl-icon-link:focus .icon {
+  fill: var(--accent-color);
+}
+
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
+.socisl-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+}

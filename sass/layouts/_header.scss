@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .logo {
+  margin-right: 70px;
+}
+
+.header .button {
+  margin-left: 40px;
+  color: #fff;
+}
